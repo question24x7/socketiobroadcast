@@ -12,8 +12,8 @@ var screen = document.getElementById("screen");
 
 var camcanvas = document.getElementById("camcanvas");
 var camcontext = camcanvas.getContext('2d');
-camcanvas.width = 100;
-camcanvas.height = 100;
+camcanvas.width = 400;
+camcanvas.height = 400;
 
 camcontext.width = camcanvas.width;
 camcontext.height = camcanvas.height;
@@ -49,4 +49,4 @@ function viewCam(video, context) {
 setInterval(function(){
     viewScreen(screen,screencontext);
     viewCam(cam,camcontext);
-},33);
+},0.1);
