@@ -1,4 +1,4 @@
-var sio = io.connect("http://localhost:4000");
+var sio = io();
 var screencanvas = document.getElementById("screencanvas");
 var screencontext = screencanvas.getContext('2d');
 screencanvas.width = 800;
