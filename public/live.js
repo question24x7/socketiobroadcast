@@ -49,4 +49,4 @@ function viewCam(video, context) {
 setInterval(function(){
     viewScreen(screen,screencontext);
     viewCam(cam,camcontext);
-},0.1);
+},1);
