@@ -1,8 +1,9 @@
 const express = require('express')
 const sck = require('socket.io')
 const app = express()
+var port = process.env.PORT || 4000
 app.use(express.static(__dirname+"/public"))
-let server = app.listen("4000", function(){
+let server = app.listen(port, function(){
     console.log("I am Working")
 })
 let ws = sck(server)
